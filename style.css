@@ -1,0 +1,77 @@
+body{
+    background: black;
+    align-content: center;
+}
+button{
+    
+    padding: 5px 15px;
+    border: unset;
+    border-radius: 50px;
+    background: RGBA(255, 255, 255, 0.4);
+    font-weight: 900;
+    color: gray;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: RGBA(255, 255, 255, 0.7);
+}
+
+img{
+    border-radius: 10px;
+}
+.carousel{
+    max-width: 1500px;
+    position: relative;
+    margin: 15%;
+}
+
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden
+{
+    display: none;
+}
+
+.carousel .carousel-item-visible{
+    display: block;
+    animation: fadeVisibility 1.5s; 
+}
+.carousel .carousel-item img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+
+}
+
+.carousel .carousel-actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    
+}    
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 10px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 10px;
+}
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    
+
+    100% {
+        opacity: 1;
+    }
+}
